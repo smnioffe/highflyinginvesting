@@ -1371,6 +1371,7 @@ pre .javascript .function {
 .archive-list-count:after {
   content: ")";
 }
+.robinhood a,
 .tagcloud a {
   margin-right: 5px;
   display: inline-block;
