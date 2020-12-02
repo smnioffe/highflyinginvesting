@@ -426,6 +426,13 @@ body {
     display: none;
   }
 }
+#nav-twitter-link {
+  color: #00aced;
+  opacity: 0.8;
+}
+#nav-twitter-link:hover {
+  opacity: 1;
+}
 #main-nav-toggle {
   display: none;
 }
@@ -555,7 +562,7 @@ body {
   transition: color 0.2s;
 }
 a.article-title:hover {
-  color: #258fb8;
+  color: #1090e4;
 }
 .article-entry {
   color: #555;
@@ -592,7 +599,7 @@ a.article-title:hover {
   margin: 1.1em 0;
 }
 .article-entry a {
-  color: #258fb8;
+  color: #1090e4;
   text-decoration: none;
 }
 .article-entry a:hover {
@@ -691,10 +698,10 @@ a.article-title:hover {
   text-decoration: none;
 }
 .article-more-link a:hover {
-  background: #258fb8;
+  background: #1090e4;
   color: #fff;
   text-decoration: none;
-  text-shadow: 0 1px #1e7293;
+  text-shadow: 0 1px #0d73b6;
 }
 .article-footer {
   font-size: 0.85em;
@@ -957,7 +964,7 @@ a.article-title:hover {
   margin: 50px 0;
 }
 #comments a {
-  color: #258fb8;
+  color: #1090e4;
 }
 .archives-wrap {
   margin: 50px 0;
@@ -1013,7 +1020,7 @@ a.article-title:hover {
   line-height: 1.6em;
 }
 .archive-article-title:hover {
-  color: #258fb8;
+  color: #1090e4;
 }
 .archive-article-footer {
   margin-top: 1em;
@@ -1087,7 +1094,7 @@ a.article-title:hover {
   color: #999;
 }
 #footer a {
-  color: #258fb8;
+  color: #1090e4;
   text-decoration: none;
 }
 #footer a:hover {
@@ -1208,7 +1215,7 @@ a.article-title:hover {
   margin-left: 20px;
 }
 .article-entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
+  color: #1090e4;
   font-weight: normal;
 }
 .article-entry .gist .gist-file .gist-meta a:hover {
@@ -1315,7 +1322,7 @@ pre .javascript .function {
   border-radius: 3px;
 }
 .widget a {
-  color: #258fb8;
+  color: #1090e4;
   text-decoration: none;
 }
 .widget a:hover {
