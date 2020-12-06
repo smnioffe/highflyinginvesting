@@ -1304,6 +1304,11 @@ pre .javascript .function {
     color: #fff;
   }
 }
+@media screen and (max-width: 479px) {
+  #bottomAd {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   #sidebar {
     display: inline;
