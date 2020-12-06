@@ -28,7 +28,7 @@
 				var href;
 
 				if (item.element) {
-					href = $(item.element).find('img').attr('src');
+					href = $(item.element).find('img').not('.externalLink').attr('src');
 				}
 
 				if (!href && item.type === 'image' && item.href) {
