@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.highflyinginvesting.com/2020/12/05/20201205_ASAN/</loc>
+    
+    <lastmod>2020-12-09</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/2020/12/07/20201207_XRP/</loc>
     
     <lastmod>2020-12-09</lastmod>
@@ -52,13 +59,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/2020/12/02/20201202_CRM/</loc>
-    
-    <lastmod>2020-12-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/2020/12/05/20201205_ASAN/</loc>
     
     <lastmod>2020-12-06</lastmod>
     
@@ -214,6 +214,34 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/tags/ASAN/</loc>
+    <lastmod>2020-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/TEAM/</loc>
+    <lastmod>2020-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/FLR/</loc>
+    <lastmod>2020-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/XRP/</loc>
+    <lastmod>2020-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/tags/BKNG/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
@@ -256,41 +284,6 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/ASAN/</loc>
-    <lastmod>2020-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/TEAM/</loc>
-    <lastmod>2020-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/SPAC/</loc>
-    <lastmod>2020-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/FLR/</loc>
-    <lastmod>2020-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/XRP/</loc>
-    <lastmod>2020-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.highflyinginvesting.com/tags/ABNB/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
@@ -299,6 +292,13 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/UBER/</loc>
+    <lastmod>2020-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/SPAC/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
