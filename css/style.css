@@ -160,6 +160,11 @@ body {
 #container {
   position: relative;
 }
+#headerAd {
+  margin-top: 5px;
+  margin-left: 100px;
+  display: block;
+}
 .mobile-nav-on {
   overflow: hidden;
 }
@@ -519,6 +524,7 @@ body {
 }
 .article {
   margin: 50px 0;
+  margin-top: 25px;
 }
 .article-inner {
   overflow: hidden;
@@ -1307,6 +1313,11 @@ pre .javascript .function {
 @media screen and (max-width: 479px) {
   #bottomAd {
     display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  #headerAd {
+    margin: auto;
   }
 }
 @media screen and (min-width: 768px) {
