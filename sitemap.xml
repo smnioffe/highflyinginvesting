@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.highflyinginvesting.com/2020/12/12/20201212_DBX/</loc>
+    
+    <lastmod>2020-12-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/2020/12/12/20201212_USO/</loc>
     
     <lastmod>2020-12-12</lastmod>
@@ -116,13 +123,6 @@
 
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/NNOX/</loc>
-    <lastmod>2020-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.highflyinginvesting.com/tags/TWOU/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -173,6 +173,13 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/RuleOf40/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/NNOX/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -312,13 +319,6 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/USO/</loc>
-    <lastmod>2020-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.highflyinginvesting.com/tags/FSLY/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -341,6 +341,27 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/TDOC/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/DBX/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/MDB/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/USO/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
