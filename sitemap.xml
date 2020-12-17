@@ -312,6 +312,20 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/tags/CRM/</loc>
+    <lastmod>2020-12-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/WORK/</loc>
+    <lastmod>2020-12-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/tags/CRWD/</loc>
     <lastmod>2020-12-17</lastmod>
     <changefreq>daily</changefreq>
@@ -341,20 +355,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/ROOT/</loc>
-    <lastmod>2020-12-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/CRM/</loc>
-    <lastmod>2020-12-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/WORK/</loc>
     <lastmod>2020-12-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
