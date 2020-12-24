@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="High Flying Investing">
 <meta property="og:description" content="Stocks                            		                     		 		       		 		                                          a-z  	  ↕      ↕d     %    IV     	      	  var parseDate &#x3D; d3.timePar">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-24T03:05:42.512Z">
-<meta property="article:modified_time" content="2020-12-24T03:05:42.512Z">
+<meta property="article:published_time" content="2020-12-24T04:48:43.886Z">
+<meta property="article:modified_time" content="2020-12-24T04:48:43.886Z">
 <meta property="article:author" content="High Flying Investing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@highflyinvest">
@@ -112,7 +112,7 @@
           <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/watchlist/index.html" class="article-date">
-  <time datetime="2020-12-24T03:05:42.512Z" itemprop="datePublished">2020-12-23</time>
+  <time datetime="2020-12-24T04:48:43.886Z" itemprop="datePublished">2020-12-23</time>
 </a>
     
   </div>
@@ -218,7 +218,7 @@ var $wrapper = $('#stockChartWrapper');
 d3.select("#stockChartWrapper").append("text").attr("class","headerText").style("margin-left","58px").text("stock")
 d3.select("#stockChartWrapper").append("text").attr("class","headerText").style("margin-left","23px").text("price")
 d3.select("#stockChartWrapper").append("text").attr("class","headerText").style("margin-left","33px").text("% change")
-d3.select("#stockChartWrapper").append("text").attr("class","headerText").style("margin-left","65px").text("90 day range")
+d3.select("#stockChartWrapper").append("text").attr("id","ninetyDayLabel").attr("class","headerText").style("margin-left","65px").text("90 day range")
 
 function softByRange(){
 $wrapper.find('.stockChart').sort(function(a, b) {
@@ -322,7 +322,7 @@ lastTenDays.forEach(function(d,i) {
 
 
 
-var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.right)
+var svg = chartBlock.append("svg").attr("width", 170)
     .attr("height", height + margin.top + margin.bottom)
 
  
@@ -333,10 +333,16 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
           .range(["#92090D","#D64045","#F3686C","#FD9799","#aeaead","#87DD83","#5BC755","#3AAF34","#0D7707"])
          .domain([-1,-.07,-.03,-.01,0,.01,.03,.07,1]);
 
+
+  var multiDayRange = chartBlock.append("svg").attr("width", 230)
+    .attr("height", height + margin.top + margin.bottom)
+
   
   var label =  svg.append("g")
     .attr("transform",
           "translate(0," + margin.top + ")");
+
+      
 
   var g =  svg.append("g")
     .attr("transform",
@@ -360,14 +366,14 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
             if (k.length>1){k=k.replace(/^0+/, '')}; return k+"%"})
           .style("fill", "black")
 
-          label.append("text").attr("y",height-margin.bottom/2).attr("x",195).attr("class","stockPriceRangeL") 
+          multiDayRange.append("text").attr("y",height-margin.bottom/2).attr("x",30).attr("class","stockPriceRangeL") 
           .text( Math.round((stockLow + Number.EPSILON) * 100) / 100)
           
-          label.append("text").attr("y",height-margin.bottom/2).attr("x",203+width).attr("class","stockPriceRangeR") 
+          multiDayRange.append("text").attr("y",height-margin.bottom/2).attr("x",195).attr("class","stockPriceRangeR") 
           .text( Math.round((stockHigh + Number.EPSILON) * 100) / 100)   
    
 
- 
+      
 
     
         var colorScale = d3
@@ -376,9 +382,16 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
          .domain([-1,-.05,-.03,-.01,0,.01,.03,.05,1]);
    
 
-     chartBlock.selectAll("rect")
+     var  tenDayBlocksOuterContainer=chartBlock.append("g")
+    .attr("class","tenDayBlocksOuterContainer")
+
+    tenDayBlocksOuterContainer.selectAll("rect")
       .data(lastTenDays)
-    .enter().append("svg").attr("width", height + margin.top + margin.bottom).attr("height", height + margin.top + margin.bottom).append("rect")
+    .enter()
+    .append("svg")
+    .attr("class","tenDayBlocksContainer")
+    .attr("width", height + margin.top + margin.bottom).attr("height", height + margin.top + margin.bottom).append("rect")
+    .attr("class","tenDayBlocks")
       .style("fill", function(d) {return colorScale(d.change)})
       .style("opacity",.85)
       .attr("x", 0)
@@ -411,39 +424,39 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
             if (k.length>1){k=k.replace(/^0+/, '')}; return k+"%"})  
 
       
-            
+    
 
     
-     g.selectAll("bar")
+          multiDayRange.selectAll("bar")
       .data(lastDayData)
     .enter().append("rect")
       .style("fill", "none")
       .style("stroke", "#8e9697")
       .style("stroke-width","1px")
-      .attr("x", 10)
+      .attr("x", 33)
       .attr("width", width)
-      .attr("y", 5)
+      .attr("y", 7)
       .attr("height", height-1);
 
 
-      g.selectAll("bar")
+      multiDayRange.selectAll("bar")
       .data(lastDayData)
     .enter().append("rect")
       .style("fill", "#545a5b")
-      .attr("x", function(d) {return x(d.prevClose)+9; })
+      .attr("x", function(d) {return x(d.prevClose)+32; })
       .attr("width", 2)
-      .attr("y", 5)
+      .attr("y", 7)
       .attr("height", height-1);
  
 
-    g.selectAll("bar")
+      multiDayRange.selectAll("bar")
       .data(lastDayData)
     .enter().append("rect")
       .style("fill", "#c1c5c6")
       .style("opacity", .8)
-      .attr("x", function(d) {return x(d.low)+10; })
+      .attr("x", function(d) {return x(d.low)+33; })
       .attr("width", function(d) {return x(d.high)-x(d.low); })
-      .attr("y", 7.5)
+      .attr("y", 9.5)
       .attr("height", height-6)
       .on("mouseover", function(d) {		
             toolTip.transition()		
@@ -462,14 +475,14 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
 
 
 
-      g.selectAll("bar")
+        multiDayRange.selectAll("bar")
       .data(lastDayData)
     .enter().append("rect")
     .style("fill", function(d) {return colorScale(d.change)})
       //.style("fill", "#383c3d")
-      .attr("x", function(d) {return x(d.close)+8; })
+      .attr("x", function(d) {return x(d.close)+31; })
       .attr("width", 4)
-      .attr("y", 7.5)
+      .attr("y", 9.5)
       .attr("height", height-6);
 
 
@@ -492,7 +505,7 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj29kzu9000c1gv7f6g590nq" class="article-share-link">Share</a>
+      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj2dfyyh0007b4v78i7pc6zk" class="article-share-link">Share</a>
       
       
     </footer>

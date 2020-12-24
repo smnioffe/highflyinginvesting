@@ -29,6 +29,25 @@
 }
 
 
+.inline-texts{
+	padding-top:0px;
+	text-anchor: middle;
+	font-size:12px;
+	vertical-align: middle;
+	white-space: no-wrap;
+	
+}
+
+.inline-text-cell{
+	vertical-align: middle;
+	display:inline-block;
+	box-sizing:border-box;
+	width: 50px;
+	height:25px;
+	margin-top:-10px;
+}
+
+
 
 .stockLabel{
   font-weight:500;
@@ -111,22 +130,6 @@
 
 
 
-.inline-texts{
-	padding-top:0px;
-	text-anchor: middle;
-	font-size:12px;
-	vertical-align: middle;
-	
-}
-
-.inline-text-cell{
-	vertical-align: middle;
-	display:inline-block;
-	box-sizing:border-box;
-	width: 50px;
-	height:25px;
-	margin-top:-10px;
-}
 
 .headerText{
 	font-size:14px;
@@ -163,3 +166,41 @@ div.SVGtooltip {
 	pointer-events: none;	
   }
   
+
+  
+@media only screen and (max-device-width: 480px) {
+	.stockChart{
+	height:130px;
+	}
+
+	.stockChart .tenDayBlocks{
+		width:15px;
+		height:15px;
+	}
+
+	.stockChart .tenDayBlocksOuterContainer{
+		display: block;
+	}
+	.stockChart .tenDayBlocksContainer{
+		
+		width:25px;
+		height:25px;
+	}
+
+	.inline-text-cell{
+		display:none;
+	}
+	
+	#ninetyDayLabel{
+		display:none;
+	}
+
+	.stockChart{
+		border-bottom: 2px solid #bbc0c0;
+	}
+
+	.fab {
+	left: 80%;
+	}
+
+}
