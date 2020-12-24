@@ -22,6 +22,10 @@
 
 .stockChart{
   margin-left:50px;
+  box-sizing: border-box;
+  line-height:24px;
+  text-align:left;
+  height:38px;
 }
 
 
@@ -71,8 +75,8 @@
 	line-height: 55px;
 	cursor: pointer;
 	position: fixed;
-	right: 50px;
-	top: 50px;
+	left: 63%;
+	bottom: 10%;
  }
 
   
@@ -88,20 +92,20 @@
  }
 
  #sortRangePrice{
-	 top: 130px;
+	bottom: 50%;
  }
 
 #sortDayRangePrice{
-	top: 210px;
+	bottom: 40%;
 
 }
  #sortPercentChange{
-	top:300px;
+	bottom: 30%;
 	line-height: 65px;
 }
 
 #sortPutPremium{
-	top:390px;
+	bottom: 20%;
 	line-height: 65px;
 }
 
@@ -114,9 +118,9 @@
 }
 
 .inline-texts{
-	padding-top:3px;
+	padding-top:0px;
 	text-anchor: middle;
-	font-size:14px;
+	font-size:12px;
 	vertical-align: middle;
 	
 }
@@ -124,13 +128,15 @@
 .inline-text-cell{
 	vertical-align: middle;
 	display:inline-block;
+	box-sizing:border-box;
 	width: 50px;
-	height:30px;
-	padding-top:10.5px;
+	height:25px;
+	margin-top:-10px;
 }
 
 .headerText{
 	font-size:14px;
+	
 }
 
 /* 
