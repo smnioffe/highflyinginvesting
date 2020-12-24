@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.highflyinginvesting.com/2020/12/23/200202123_HEXO/</loc>
+    <loc>https://www.highflyinginvesting.com/watchlist/index.html</loc>
     
     <lastmod>2020-12-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/watchlist/index.html</loc>
+    <loc>https://www.highflyinginvesting.com/2020/12/23/200202123_HEXO/</loc>
     
-    <lastmod>2020-12-23</lastmod>
+    <lastmod>2020-12-24</lastmod>
     
   </url>
   
@@ -186,13 +186,6 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/DMTK/</loc>
-    <lastmod>2020-12-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.highflyinginvesting.com/tags/TLRY/</loc>
     <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
@@ -264,6 +257,13 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/MA/</loc>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/DMTK/</loc>
     <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -389,6 +389,20 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/tags/ASAN/</loc>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/TEAM/</loc>
+    <lastmod>2020-12-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/tags/CRWD/</loc>
     <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
@@ -418,20 +432,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/ROOT/</loc>
-    <lastmod>2020-12-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/ASAN/</loc>
-    <lastmod>2020-12-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/TEAM/</loc>
     <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

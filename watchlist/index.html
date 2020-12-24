@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="High Flying Investing">
 <meta property="og:description" content="Stocks                            		                     		 		       		 		                                                a-z  	  ↕      ↕d     %    IV     	      	  var parseDate &#x3D; d3.t">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-23T23:41:22.332Z">
-<meta property="article:modified_time" content="2020-12-23T23:41:22.332Z">
+<meta property="article:published_time" content="2020-12-24T02:26:09.981Z">
+<meta property="article:modified_time" content="2020-12-24T02:26:09.981Z">
 <meta property="article:author" content="High Flying Investing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@highflyinvest">
@@ -112,7 +112,7 @@
           <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/watchlist/index.html" class="article-date">
-  <time datetime="2020-12-23T23:41:22.332Z" itemprop="datePublished">2020-12-23</time>
+  <time datetime="2020-12-24T02:26:09.981Z" itemprop="datePublished">2020-12-23</time>
 </a>
     
   </div>
@@ -420,7 +420,7 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
       .style("fill", "none")
       .style("stroke", "#8e9697")
       .style("stroke-width","1px")
-      .attr("x", 0)
+      .attr("x", 10)
       .attr("width", width)
       .attr("y", 5)
       .attr("height", height-1);
@@ -430,7 +430,7 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
       .data(lastDayData)
     .enter().append("rect")
       .style("fill", "#545a5b")
-      .attr("x", function(d) {return x(d.prevClose)-1; })
+      .attr("x", function(d) {return x(d.prevClose)+9; })
       .attr("width", 2)
       .attr("y", 5)
       .attr("height", height-1);
@@ -441,7 +441,7 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
     .enter().append("rect")
       .style("fill", "#c1c5c6")
       .style("opacity", .8)
-      .attr("x", function(d) {return x(d.low); })
+      .attr("x", function(d) {return x(d.low)+10; })
       .attr("width", function(d) {return x(d.high)-x(d.low); })
       .attr("y", 7.5)
       .attr("height", height-6)
@@ -467,7 +467,7 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
     .enter().append("rect")
     .style("fill", function(d) {return colorScale(d.change)})
       //.style("fill", "#383c3d")
-      .attr("x", function(d) {return x(d.close)-2; })
+      .attr("x", function(d) {return x(d.close)+8; })
       .attr("width", 4)
       .attr("y", 7.5)
       .attr("height", height-6);
@@ -492,7 +492,7 @@ var svg = chartBlock.append("svg").attr("width", width + margin.left + margin.ri
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj27d74h0007vcv7d07jed1t" class="article-share-link">Share</a>
+      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj2865y80007bsv7a45q3kv7" class="article-share-link">Share</a>
       
       
     </footer>
