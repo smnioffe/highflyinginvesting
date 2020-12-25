@@ -319,20 +319,6 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/BKNG/</loc>
-    <lastmod>2020-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/BTC/</loc>
-    <lastmod>2020-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.highflyinginvesting.com/tags/TWOU/</loc>
     <lastmod>2020-12-25</lastmod>
     <changefreq>daily</changefreq>
@@ -383,6 +369,20 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/RuleOf40/</loc>
+    <lastmod>2020-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/BKNG/</loc>
+    <lastmod>2020-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/BTC/</loc>
     <lastmod>2020-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -480,6 +480,20 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/tags/DBX/</loc>
+    <lastmod>2020-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/MDB/</loc>
+    <lastmod>2020-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/tags/FSLY/</loc>
     <lastmod>2020-12-25</lastmod>
     <changefreq>daily</changefreq>
@@ -495,20 +509,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/TDOC/</loc>
-    <lastmod>2020-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/DBX/</loc>
-    <lastmod>2020-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/MDB/</loc>
     <lastmod>2020-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

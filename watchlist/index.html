@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="High Flying Investing">
 <meta property="og:description" content="Our Live Watchlist                                     		                     		 		       		 		                                           a-z  	  ↕      ↕d     %    IV     	      	  $(do">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-25T06:19:19.334Z">
-<meta property="article:modified_time" content="2020-12-25T06:19:19.334Z">
+<meta property="article:published_time" content="2020-12-25T06:27:14.741Z">
+<meta property="article:modified_time" content="2020-12-25T06:27:14.741Z">
 <meta property="article:author" content="High Flying Investing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@highflyinvest">
@@ -110,7 +110,7 @@
           <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/watchlist/index.html" class="article-date">
-  <time datetime="2020-12-25T06:19:19.334Z" itemprop="datePublished">2020-12-25</time>
+  <time datetime="2020-12-25T06:27:14.741Z" itemprop="datePublished">2020-12-25</time>
 </a>
     
   </div>
@@ -218,10 +218,10 @@ makeSingleStock(d,data)
 var $wrapper = $('#stockChartWrapper');
 
 
-d3.select("#stockChartWrapper").append("text").attr("class","headerText").style("margin-left","58px").text("stock")
+d3.select("#stockChartWrapper").append("text").attr("id","stockTickerLabel").attr("class","headerText clickable").style("margin-left","58px").text("stock")
 d3.select("#stockChartWrapper").append("text").attr("class","headerText").style("margin-left","23px").text("price")
-d3.select("#stockChartWrapper").append("text").attr("class","headerText").style("margin-left","33px").text("% change")
-d3.select("#stockChartWrapper").append("text").attr("id","ninetyDayLabel").attr("class","headerText").style("margin-left","65px").text("90 day range")
+d3.select("#stockChartWrapper").append("text").attr("id","percentChangeLabel").attr("class","headerText clickable").style("margin-left","33px").text("% change")
+d3.select("#stockChartWrapper").append("text").attr("id","ninetyDayLabel").attr("class","headerText clickable").style("margin-left","65px").text("90 day range")
 
 function softByRange(){
 $wrapper.find('.stockChart').sort(function(a, b) {
@@ -232,7 +232,7 @@ $wrapper.find('.stockChart').sort(function(a, b) {
 
 softByRange()
 
-$( "#sortAlp" ).click(function() {
+$( "#sortAlp, #stockTickerLabel" ).click(function() {
   //sortOrder =defined up top
   
   $wrapper.find('.stockChart').sort(function(a, b) {
@@ -241,7 +241,7 @@ $( "#sortAlp" ).click(function() {
 .appendTo($wrapper);
 });
 
-$( "#sortRangePrice" ).click(function() {
+$( "#sortRangePrice, #ninetyDayLabel" ).click(function() {
   softByRange()
 })
 
@@ -255,7 +255,7 @@ $( "#sortDayRangePrice" ).click(function() {
 });
 
 
-$( "#sortPercentChange" ).click(function() {
+$( "#sortPercentChange,#percentChangeLabel" ).click(function() {
  
   $wrapper.find('.stockChart').sort(function(a, b) {
     return +b.getAttribute('data-percent') - +a.getAttribute('data-percent');
@@ -270,6 +270,7 @@ $( "#sortPutPremium" ).click(function() {
 })
 .appendTo($wrapper);
 });
+
 
 
 });
@@ -606,7 +607,7 @@ var svg = chartBlock
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj3vyax4004dpov73xsogsks" class="article-share-link">Share</a>
+      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj3w85ag004fa8v7ge70gbp8" class="article-share-link">Share</a>
       
       
     </footer>
