@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="High Flying Investing">
 <meta property="og:description" content="Our Live Watchlist                                     		                     		 		       		 		                                           a-z  	  ↕      ↕d     %    IV     	      	  $(do">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-25T00:44:07.341Z">
-<meta property="article:modified_time" content="2020-12-25T00:44:07.341Z">
+<meta property="article:published_time" content="2020-12-25T04:47:00.726Z">
+<meta property="article:modified_time" content="2020-12-25T04:47:00.726Z">
 <meta property="article:author" content="High Flying Investing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@highflyinvest">
@@ -67,9 +67,7 @@
         
           <a class="main-nav-link" href="/archives">Archives</a>
         
-          <a class="main-nav-link" href="/watchlist">Watchlist</a>
-        
-          <a class="main-nav-link" href="/live-chart">Live Chart</a>
+          <a class="main-nav-link" href="/watchlist">Live Watchlist</a>
         
           <a class="main-nav-link" href="/disclaimer">Disclaimer</a>
         
@@ -112,7 +110,7 @@
           <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/watchlist/index.html" class="article-date">
-  <time datetime="2020-12-25T00:44:07.341Z" itemprop="datePublished">2020-12-24</time>
+  <time datetime="2020-12-25T04:47:00.726Z" itemprop="datePublished">2020-12-24</time>
 </a>
     
   </div>
@@ -364,28 +362,32 @@ var svg = chartBlock
 
 
 
-          label.append("text").attr("y",height-margin.bottom/2).attr("x",7.5).attr("class","stockLabel").text(stock)
+          label.append("text").attr("y",height-margin.bottom/2).attr("x",7.5).attr("class","stockLabel clickable").text(stock).on("click", function() {
+            openStockChart(stock)});
 
 
-          label.append("rect").attr("y",margin.top).attr("x",62).attr("width",47).attr("height",height - margin.top - margin.bottom+10).attr("class","stockLabelPriceBox") 
+          label.append("rect").attr("y",margin.top).attr("x",62).attr("width",47).attr("height",height - margin.top - margin.bottom+10).attr("class","stockLabelPriceBox clickable") 
           .style("rx", "4px").style("fill", function(d) {  return colorScaleLabel(lastTenDays[0].change)})
           .on("click", function() {
-            openStockChart(stock)
-});
-          //.on("click", openStockChart(stock));
-      //{return (lastTenDays[0].change > 0) ? '#33AB6B' :'#D64045'; })
+            openStockChart(stock)});
+
+       
 
           label.append("text").attr("y",height-margin.bottom/2).attr("x",85)
-          .attr("class",function(d) {var t= lastDayData[0].close; t= (Math.round((t + Number.EPSILON) * 100) / 100);if (t.toString().length<7){return "stockLabelPrice"} else {return "stockLabelPrice labelSm"}})
-          //.attr("class","stockLabelPrice") 
+          .attr("class",function(d) {var t= lastDayData[0].close; t= (Math.round((t + Number.EPSILON) * 100) / 100);if (t.toString().length<7){return "stockLabelPrice clickable"} else {return "stockLabelPrice labelSm clickable"}})
           .text(function(d) {var t= lastDayData[0].close; return Math.round((t + Number.EPSILON) * 100) / 100})
           .style("fill", "white")
+          .on("click", function() {
+            openStockChart(stock)});
 
 
-          label.append("text").attr("y",height-margin.bottom/2).attr("x",140).attr("class","stockLabelPrice") 
+          label.append("text").attr("y",height-margin.bottom/2).attr("x",140).attr("class","stockLabelPrice clickable") 
           .text(function(d) {var t= lastDayData[0].change*100; var k = (Math.round((t + Number.EPSILON) * 100) / 100).toString();
             if (k.length>1){k=k.replace(/^0+/, '')}; return k+"%"})
           .style("fill", "black")
+          .on("click", function() {
+            openStockChart(stock)});
+
 
           multiDayRange.append("text").attr("y",height-margin.bottom/2).attr("x",30).attr("class","stockPriceRangeL") 
           .text( Math.round((stockLow + Number.EPSILON) * 100) / 100)
@@ -458,6 +460,7 @@ var svg = chartBlock
       .attr("width", width)
       .attr("y", 7)
       .attr("height", height-1)
+
    
       
 
@@ -468,7 +471,22 @@ var svg = chartBlock
       .attr("x", function(d) {return x(d.prevClose)+32; })
       .attr("width", 2)
       .attr("y", 7)
-      .attr("height", height-1);
+      .attr("height", height-1)
+      .on("mouseover", function(d) {		
+            toolTip.transition()		
+                .duration(100)		
+                .style("opacity", .9);		
+                toolTip.html("<span'>Previous Close: </span><b>" + d.prevClose+"</b>")	
+                .style("left", (d3.event.pageX)+5 + "px")		
+                .style("top", (d3.event.pageY - 28) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+          toolTip.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+      
+
  
 
       multiDayRange.selectAll("bar")
@@ -484,7 +502,7 @@ var svg = chartBlock
             toolTip.transition()		
                 .duration(100)		
                 .style("opacity", .9);		
-                toolTip.html("daily low: "+d.low + "<br/>daily high: "  + d.high)	
+                toolTip.html("<span style='color:#f7a9ab;'>Daily Low:</span> <b>"+d.low + "</b><br/><span style='color:#aee0ac;'>Daily High:</span> <b>"  + d.high+"</b>")	
                 .style("left", (d3.event.pageX)+5 + "px")		
                 .style("top", (d3.event.pageY - 28) + "px");	
             })					
@@ -493,6 +511,7 @@ var svg = chartBlock
                 .duration(500)		
                 .style("opacity", 0);	
         });
+  
 
 
 
@@ -505,7 +524,22 @@ var svg = chartBlock
       .attr("x", function(d) {return x(d.close)+31; })
       .attr("width", 4)
       .attr("y", 9.5)
-      .attr("height", height-6);
+      .attr("height", height-6)
+      .on("mouseover", function(d) {		
+            toolTip.transition()		
+                .duration(100)		
+                .style("opacity", .9);		
+                toolTip.html("<span style='color:#f7a9ab;'>Daily Low:</span> <b>"+d.low + "</b><br/><span style='color:#aee0ac;'>Daily High:</span> <b>"  + d.high+"</b>")	
+                .style("left", (d3.event.pageX)+5 + "px")		
+                .style("top", (d3.event.pageY - 28) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+          toolTip.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });
+  
+
 
 
 
@@ -527,7 +561,7 @@ var svg = chartBlock
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj3rnb740007scv76omf37n9" class="article-share-link">Share</a>
+      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj3sp7pl0007ysv70x54dylu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -664,9 +698,7 @@ amzn_assoc_title = "Shop Related Products";
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
-    <a href="/watchlist" class="mobile-nav-link">Watchlist</a>
-  
-    <a href="/live-chart" class="mobile-nav-link">Live Chart</a>
+    <a href="/watchlist" class="mobile-nav-link">Live Watchlist</a>
   
     <a href="/disclaimer" class="mobile-nav-link">Disclaimer</a>
   
