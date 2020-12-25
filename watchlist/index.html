@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="High Flying Investing">
 <meta property="og:description" content="Our Live Watchlist                                     		                     		 		       		 		                                           a-z  	  ↕      ↕d     %    IV     	      	  $(do">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-24T17:30:39.922Z">
-<meta property="article:modified_time" content="2020-12-24T17:30:39.922Z">
+<meta property="article:published_time" content="2020-12-25T00:44:07.341Z">
+<meta property="article:modified_time" content="2020-12-25T00:44:07.341Z">
 <meta property="article:author" content="High Flying Investing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@highflyinvest">
@@ -112,7 +112,7 @@
           <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/watchlist/index.html" class="article-date">
-  <time datetime="2020-12-24T17:30:39.922Z" itemprop="datePublished">2020-12-24</time>
+  <time datetime="2020-12-25T00:44:07.341Z" itemprop="datePublished">2020-12-24</time>
 </a>
     
   </div>
@@ -283,6 +283,14 @@ var toolTip = d3.select("#stockChartWrapper").append("div")
     .style("opacity", 0);
 
 
+    function openStockChart(stock){
+      const url="/live-chart/?stock="+stock;
+      window.open(url,'_blank');
+       window.open(url);
+    //window.location.assign(url, '_blank');
+ }
+ 
+
 
 function makeSingleStock(stock,data){
 
@@ -327,9 +335,14 @@ lastTenDays.forEach(function(d,i) {
 
 
 
-var svg = chartBlock.append("svg").attr("width", 170)
+var svg = chartBlock
+.append("svg").attr("width", 170)
     .attr("height", height + margin.top + margin.bottom)
+    // .attr("xlink:href", function(d) {return "/live-chart/?stock="+stock })
+    //   .attr("target","_blank")
 
+
+    
  
 
 
@@ -345,19 +358,22 @@ var svg = chartBlock.append("svg").attr("width", 170)
   
   var label =  svg.append("g")
     .attr("transform",
-          "translate(0," + margin.top + ")");
-
+          "translate(0," + margin.top + ")")
+          
       
 
-  var g =  svg.append("g")
-    .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
 
-          label.append("text").attr("y",height-margin.bottom/2).attr("x",7.5).attr("class","stockLabel").text(stock) 
+
+          label.append("text").attr("y",height-margin.bottom/2).attr("x",7.5).attr("class","stockLabel").text(stock)
 
 
           label.append("rect").attr("y",margin.top).attr("x",62).attr("width",47).attr("height",height - margin.top - margin.bottom+10).attr("class","stockLabelPriceBox") 
-          .style("rx", "4px").style("fill", function(d) {  return colorScaleLabel(lastTenDays[0].change)})//{return (lastTenDays[0].change > 0) ? '#33AB6B' :'#D64045'; })
+          .style("rx", "4px").style("fill", function(d) {  return colorScaleLabel(lastTenDays[0].change)})
+          .on("click", function() {
+            openStockChart(stock)
+});
+          //.on("click", openStockChart(stock));
+      //{return (lastTenDays[0].change > 0) ? '#33AB6B' :'#D64045'; })
 
           label.append("text").attr("y",height-margin.bottom/2).attr("x",85)
           .attr("class",function(d) {var t= lastDayData[0].close; t= (Math.round((t + Number.EPSILON) * 100) / 100);if (t.toString().length<7){return "stockLabelPrice"} else {return "stockLabelPrice labelSm"}})
@@ -441,8 +457,9 @@ var svg = chartBlock.append("svg").attr("width", 170)
       .attr("x", 33)
       .attr("width", width)
       .attr("y", 7)
-      .attr("height", height-1);
-
+      .attr("height", height-1)
+   
+      
 
       multiDayRange.selectAll("bar")
       .data(lastDayData)
@@ -510,7 +527,7 @@ var svg = chartBlock.append("svg").attr("width", 170)
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj34k3670005qcv70r8n1qfi" class="article-share-link">Share</a>
+      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="ckj3m0gsk0007pcv7al70bomj" class="article-share-link">Share</a>
       
       
     </footer>
