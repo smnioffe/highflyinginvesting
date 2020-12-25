@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.highflyinginvesting.com/watchlist/index.html</loc>
+    
+    <lastmod>2020-12-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/2020/12/24/200202124_BABA/</loc>
     
     <lastmod>2020-12-25</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/2020/12/23/200202123_HEXO/</loc>
-    
-    <lastmod>2020-12-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/watchlist/index.html</loc>
     
     <lastmod>2020-12-25</lastmod>
     
@@ -319,6 +319,20 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/tags/BKNG/</loc>
+    <lastmod>2020-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/BTC/</loc>
+    <lastmod>2020-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/tags/TWOU/</loc>
     <lastmod>2020-12-25</lastmod>
     <changefreq>daily</changefreq>
@@ -369,20 +383,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/RuleOf40/</loc>
-    <lastmod>2020-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/BKNG/</loc>
-    <lastmod>2020-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/BTC/</loc>
     <lastmod>2020-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
