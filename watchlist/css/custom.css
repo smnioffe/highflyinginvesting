@@ -95,7 +95,7 @@
 	cursor: pointer;
 	position: fixed;
 	left: 63%;
-	bottom: 10%;
+	bottom: 55%;
  }
 
   
@@ -111,21 +111,25 @@
  }
 
  #sortRangePrice{
-	bottom: 50%;
+	bottom: 45%;
  }
 
 #sortDayRangePrice{
-	bottom: 40%;
+	bottom: 35%;
 
 }
  #sortPercentChange{
-	bottom: 30%;
+	bottom: 25%;
 	line-height: 65px;
 }
 
 #sortPutPremium{
-	bottom: 20%;
+	bottom: 15%;
 	line-height: 65px;
+}
+
+#sortShort{
+	bottom: 5%;
 }
 
 
@@ -191,8 +195,12 @@ div.SVGtooltip {
 		display:none;
 	}
 	
-	#ninetyDayLabel{
+	#ninetyDayLabel, #tenDayLabel, #IVLabel{
 		display:none;
+	}
+
+	#priceLabel{
+		margin-left:30px !important;
 	}
 
 	.stockChart{
