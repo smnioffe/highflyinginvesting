@@ -51,6 +51,13 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/2020/12/07/20201207_XRP/</loc>
+    
+    <lastmod>2021-12-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/2020/12/07/20201207_SPACs/</loc>
     
     <lastmod>2021-12-28</lastmod>
@@ -59,13 +66,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/2020/12/09/20201208_ABNB/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/2020/12/07/20201207_XRP/</loc>
     
     <lastmod>2021-12-28</lastmod>
     
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/2020/11/09/20201130_BKNG/</loc>
+    <loc>https://www.highflyinginvesting.com/2020/11/28/20201129_NNOX/</loc>
     
     <lastmod>2021-12-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/2020/11/28/20201129_NNOX/</loc>
+    <loc>https://www.highflyinginvesting.com/2020/11/09/20201130_BKNG/</loc>
     
     <lastmod>2021-12-28</lastmod>
     
@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/2020/12/02/20201202_CRM/</loc>
+    <loc>https://www.highflyinginvesting.com/2020/12/01/20201201_BTC/</loc>
     
     <lastmod>2021-12-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/2020/12/01/20201201_BTC/</loc>
+    <loc>https://www.highflyinginvesting.com/2020/12/02/20201202_CRM/</loc>
     
     <lastmod>2021-12-28</lastmod>
     
@@ -333,6 +333,20 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/tags/CCIV/</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/LCID/</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/tags/SPLK/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
@@ -361,14 +375,14 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/BKNG/</loc>
+    <loc>https://www.highflyinginvesting.com/tags/NNOX/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/NNOX/</loc>
+    <loc>https://www.highflyinginvesting.com/tags/BKNG/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -417,6 +431,13 @@
   </url>
   
   <url>
+    <loc>https://www.highflyinginvesting.com/tags/BTC/</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.highflyinginvesting.com/tags/CRM/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
@@ -425,13 +446,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/WORK/</loc>
-    <lastmod>2022-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/BTC/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -480,20 +494,6 @@
   </url>
   
   <url>
-    <loc>https://www.highflyinginvesting.com/tags/ABNB/</loc>
-    <lastmod>2022-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/UBER/</loc>
-    <lastmod>2022-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.highflyinginvesting.com/tags/FLR/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
@@ -502,6 +502,20 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/XRP/</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/ABNB/</loc>
+    <lastmod>2022-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.highflyinginvesting.com/tags/UBER/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -523,20 +537,6 @@
   
   <url>
     <loc>https://www.highflyinginvesting.com/tags/TDOC/</loc>
-    <lastmod>2022-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/CCIV/</loc>
-    <lastmod>2022-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.highflyinginvesting.com/tags/LCID/</loc>
     <lastmod>2022-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

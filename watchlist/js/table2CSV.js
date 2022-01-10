@@ -60,7 +60,7 @@ function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
     // but this will not work in some browsers
     // or you will not get the correct file extension    
     
-    //this trick will generate a temp <a /> tag
+    //this trick will generate a temp <a> tag
     var link = document.createElement("a");    
     link.href = uri;
     
@@ -72,4 +72,4 @@ function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-}
+}</a>
