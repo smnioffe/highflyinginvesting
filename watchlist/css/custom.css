@@ -1,0 +1,206 @@
+#stockChartBody html,
+#stockChartBody body {
+	height: 100%;
+
+	
+}
+
+
+
+#stockChartBody {
+	margin: 0;
+	font-weight: 100;
+
+
+}
+
+#stockChartWrapper{
+	padding-bottom:20px;
+	margin-left:-60px;
+	margin-top:15px;
+}
+
+.stockChart{
+  margin-left:50px;
+  box-sizing: border-box;
+  line-height:24px;
+  text-align:left;
+  height:38px;
+}
+
+
+.inline-texts{
+	padding-top:0px;
+	text-anchor: middle;
+	font-size:12px;
+	vertical-align: middle;
+	white-space: no-wrap;
+	
+}
+
+.inline-text-cell{
+	vertical-align: middle;
+	display:inline-block;
+	box-sizing:border-box;
+	width: 50px;
+	height:25px;
+	margin-top:-10px;
+}
+
+
+
+.stockLabel{
+  font-weight:500;
+}
+
+.stockLabelPrice{
+	font-size: 13px;
+	font-weight:500;
+	text-anchor: middle;
+}
+
+.stockLabelPrice.labelSm{
+	font-size:12px;
+}
+
+
+
+.stockPriceRangeL,.stockPriceRangeR{
+	font-size: 9px;
+	font-weight:400;
+	
+}
+
+.stockPriceRangeL{
+	text-anchor: end;
+}
+
+.stockPriceRangeR{
+	text-anchor: start;
+}
+
+.fab {
+	width: 60px;
+	height: 60px;
+	background-color: #8e9697;
+	border-radius: 50%;
+	box-shadow: 0 6px 10px 0 #666;
+	transition: all 0.1s ease-in-out;
+  
+	font-size: 32px;
+	font-weight: 500;
+	color: white;
+	text-align: center;
+	line-height: 55px;
+	cursor: pointer;
+	position: fixed;
+	left: 63%;
+	bottom: 10%;
+ }
+
+  
+ .fab:hover {
+	box-shadow: 0 6px 14px 0 #666;
+	transform: scale(1.05);
+ }
+
+ .fab span{
+	font-size: 22px;
+	font-weight: 300;
+	padding-left:2.5px;
+ }
+
+ #sortRangePrice{
+	bottom: 50%;
+ }
+
+#sortDayRangePrice{
+	bottom: 40%;
+
+}
+ #sortPercentChange{
+	bottom: 30%;
+	line-height: 65px;
+}
+
+#sortPutPremium{
+	bottom: 20%;
+	line-height: 65px;
+}
+
+
+
+
+.headerText{
+	font-size:14px;
+	
+}
+
+/* 
+div.SVGtooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 120px;					
+    height: 34px;					
+    padding: 4px;				
+    font: 12px sans-serif;		
+    background: #c1c5c6;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+} */
+
+
+div.SVGtooltip {
+	position: absolute;
+	left:50%;
+	padding: 8px;
+	line-height: 15px;
+	background: #474b4b;
+	opacity:.8;
+	color: white;
+	border-radius: 2px;
+	font-size: 13px;
+	font-weight: 400;
+	z-index: 999;
+	pointer-events: none;	
+  }
+  
+
+  
+@media only screen and (max-device-width: 480px) {
+	.stockChart{
+	height:130px;
+	}
+
+	.stockChart .tenDayBlocks{
+		width:15px;
+		height:15px;
+	}
+
+	.stockChart .tenDayBlocksOuterContainer{
+		display: block;
+	}
+	.stockChart .tenDayBlocksContainer{
+		
+		width:25px;
+		height:25px;
+	}
+
+	.inline-text-cell{
+		display:none;
+	}
+	
+	#ninetyDayLabel{
+		display:none;
+	}
+
+	.stockChart{
+		border-bottom: 2px solid #bbc0c0;
+	}
+
+	.fab {
+	left: 80%;
+	}
+
+}
