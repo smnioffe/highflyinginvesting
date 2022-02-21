@@ -397,6 +397,7 @@ body {
   float: left;
   margin-left: -15px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap");
 .nav-icon,
 .main-nav-link {
   float: left;
@@ -427,6 +428,7 @@ body {
 }
 .main-nav-link {
   font-weight: 300;
+  font-family: 'Encode Sans Condensed', sans-serif;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 479px) {
