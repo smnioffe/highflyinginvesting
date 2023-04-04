@@ -36,8 +36,8 @@
 <meta property="og:site_name" content="High Flying Investing">
 <meta property="og:description" content="Our Live Watchlist                                     		                     		 		       		 		                                           a-z  	  ↕      ↕d     %    IV     	      	  $(do">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-10T06:08:41.415Z">
-<meta property="article:modified_time" content="2022-01-10T06:08:41.415Z">
+<meta property="article:published_time" content="2023-04-04T15:22:42.652Z">
+<meta property="article:modified_time" content="2023-04-04T15:22:42.652Z">
 <meta property="article:author" content="High Flying Investing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@highflyinvest">
@@ -124,7 +124,7 @@
           <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/watchlist/index.html" class="article-date">
-  <time datetime="2022-01-10T06:08:41.415Z" itemprop="datePublished">2022-01-10</time>
+  <time datetime="2023-04-04T15:22:42.652Z" itemprop="datePublished">2023-04-04</time>
 </a>
     
   </div>
@@ -237,53 +237,59 @@ d3.select("#stockChartWrapper").append("text").attr("class","headerText").style(
 d3.select("#stockChartWrapper").append("text").attr("id","percentChangeLabel").attr("class","headerText clickable").style("margin-left","33px").text("% change")
 d3.select("#stockChartWrapper").append("text").attr("id","ninetyDayLabel").attr("class","headerText clickable").style("margin-left","65px").text("90 day range")
 
-function softByRange(){
-$wrapper.find('.stockChart').sort(function(a, b) {
-    return +a.getAttribute('data-rank') - +b.getAttribute('data-rank');
-})
-.appendTo($wrapper);
+function sortByRange() {
+    $wrapper.find('.stockChart').sort(function(a, b) {
+        return +a.getAttribute('data-rank') - +b.getAttribute('data-rank');
+    })
+    .appendTo($wrapper);
 }
 
-softByRange()
+sortByRange();
 
-$( "#sortAlp, #stockTickerLabel" ).click(function() {
-  //sortOrder =defined up top
-  
-  $wrapper.find('.stockChart').sort(function(a, b) {
-    return (a.getAttribute('data-stock')) > (b.getAttribute('data-stock')) ? 1 : -1;//a.getAttribute('data-stock'),b.getAttribute('data-stock');
-})
-.appendTo($wrapper);
+var toggleAlp = true;
+$("#sortAlp, #stockTickerLabel").click(function() {
+    $wrapper.find('.stockChart').sort(function(a, b) {
+        return toggleAlp ? (a.getAttribute('data-stock') > b.getAttribute('data-stock') ? 1 : -1) : (a.getAttribute('data-stock') < b.getAttribute('data-stock') ? 1 : -1);
+    }).appendTo($wrapper);
+    toggleAlp = !toggleAlp;
 });
 
-$( "#sortRangePrice, #ninetyDayLabel" ).click(function() {
-  softByRange()
-})
-
-
-$( "#sortDayRangePrice" ).click(function() {
- 
- $wrapper.find('.stockChart').sort(function(a, b) {
-   return +b.getAttribute('data-day-range') - +a.getAttribute('data-day-range');
-})
-.appendTo($wrapper);
+var toggleRangePrice = true;
+$("#sortRangePrice, #ninetyDayLabel").click(function() {
+    if (toggleRangePrice) {
+        sortByRange();
+    } else {
+        $wrapper.find('.stockChart').sort(function(a, b) {
+            return +b.getAttribute('data-rank') - +a.getAttribute('data-rank');
+        }).appendTo($wrapper);
+    }
+    toggleRangePrice = !toggleRangePrice;
 });
 
-
-$( "#sortPercentChange,#percentChangeLabel" ).click(function() {
- 
-  $wrapper.find('.stockChart').sort(function(a, b) {
-    return +b.getAttribute('data-percent') - +a.getAttribute('data-percent');
-})
-.appendTo($wrapper);
+var toggleDayRangePrice = true;
+$("#sortDayRangePrice").click(function() {
+    $wrapper.find('.stockChart').sort(function(a, b) {
+        return toggleDayRangePrice ? (+b.getAttribute('data-day-range') - +a.getAttribute('data-day-range')) : (+a.getAttribute('data-day-range') - +b.getAttribute('data-day-range'));
+    }).appendTo($wrapper);
+    toggleDayRangePrice = !toggleDayRangePrice;
 });
 
-$( "#sortPutPremium" ).click(function() {
- 
- $wrapper.find('.stockChart').sort(function(a, b) {
-   return +b.getAttribute('data-put-putIV') - +a.getAttribute('data-put-putIV');
-})
-.appendTo($wrapper);
+var togglePercentChange = true;
+$("#sortPercentChange,#percentChangeLabel").click(function() {
+    $wrapper.find('.stockChart').sort(function(a, b) {
+        return togglePercentChange ? (+b.getAttribute('data-percent') - +a.getAttribute('data-percent')) : (+a.getAttribute('data-percent') - +b.getAttribute('data-percent'));
+    }).appendTo($wrapper);
+    togglePercentChange = !togglePercentChange;
 });
+
+var togglePutPremium = true;
+$("#sortPutPremium").click(function() {
+    $wrapper.find('.stockChart').sort(function(a, b) {
+        return togglePutPremium ? (+b.getAttribute('data-put-putIV') - +a.getAttribute('data-put-putIV')) : (+a.getAttribute('data-put-putIV') - +b.getAttribute('data-put-putIV'));
+    }).appendTo($wrapper);
+    togglePutPremium = !togglePutPremium;
+});
+
 
 
 
@@ -621,7 +627,7 @@ var svg = chartBlock
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="cld3c40p20002g3gxgx3bei7h" class="article-share-link">Share</a>
+      <a data-url="https://www.highflyinginvesting.com/watchlist/index.html" data-id="clg2eu4g70002ab6egi8rhpye" class="article-share-link">Share</a>
       
       
     </footer>
